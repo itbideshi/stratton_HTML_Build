@@ -99,13 +99,29 @@ var stratton = {
 	resize_selectBox: function(){
 		let selectbox = document.querySelectorAll('.cs_selectbox');
 		for(let i=0; i<selectbox.length; i++){
-			var t= setTimeout(function(){
-				var paddingSpace = selectbox[i].offsetHeight + 20;
-				selectbox[i].querySelectorAll('.optionsList')[0].style.paddingTop = paddingSpace+"px";
-			}, 10);
+			var paddingSpace = selectbox[i].offsetHeight + 20;
+			selectbox[i].querySelectorAll('.optionsList')[0].style.paddingTop = paddingSpace+"px";
 		}
 	},
 
+	tooltip_toggle: function(){
+		let tooltip = document.querySelectorAll('.tooltip_info');
+		let close = document.querySelectorAll('.close');
+		for(let i=0; i<tooltip.length; i++){
+			tooltip[i].addEventListener('click', function(elem){
+				elem.target.classList.toggle("showTooltip");
+			}, false)
+		}
+		for(let i=0; i<close.length; i++){
+			close[i].addEventListener('click', function(elem){
+				let e = elem.target;
+				while(!e.classList.contains('tooltip_info')){
+					e = e.parentNode;
+				}
+				e.classList.remove('showTooltip');
+			})
+		}
+	}
 }
 
 
@@ -113,6 +129,7 @@ stratton.cstm_select();
 stratton.cstm_autosuggest();
 stratton.editFields();
 stratton.resize_selectBox();
+stratton.tooltip_toggle();
 
 window.addEventListener('resize', function(){
 	stratton.resize_selectBox();
