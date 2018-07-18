@@ -42,7 +42,7 @@ var stratton = {
 				elem = e.target;
 				var time = setTimeout(function(){
 					elem.parentNode.style.zIndex = '';
-				}, 300);
+				}, 320);
 				
 				e.target.previousElementSibling.classList.remove('slide_right');	
 			});
