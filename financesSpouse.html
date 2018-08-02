@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <div class="headerFixCont">
+        <!-- Page Header -->
+        <header>
+    <div class="slds-grid slds-wrap slds-grid_align-center">
+        <div class="slds-col slds-size_11-of-12">
+            <nav class="secondary_nav slds-clearfix slds-hide_large">
+                <ul>
+                    <li class="slds-text-align_right slds-hide_large">
+                        <a href="#" onclick="stratton.sidebar_toggle()"><img src="images/icons/close.svg" /></a>
+                    </li>
+                    <li><a href="#">Need help?</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12">
+                    <a href="#">
+						<img src="images/stratton-finance-logo.png" alt="" class="logo" />
+					</a>
+                </div>
+                
+
+                <div class="slds-col slds-size_5-of-12 slds-show_large">
+                    
+                    <div class="headTxt">
+                        Stage1 <span>Make an application</span>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="slds-col slds-size_9-of-12 slds-large-size_4-of-12  slds-text-align_right call">
+                    
+                    <!--<a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
+						<img src="images/icons/mobile_menu.svg" />
+					</a>-->
+                    
+                    <button class="slds-button defaultBtn">Exit</button>
+                    
+                    <span class="slds-hide">
+						<a href="tel:1300787288">1300 787 288</a>
+						<img src="images/icons/search.svg" alt="" class="search_icon" />
+					</span>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- Page Header -->
+        <!-- Page Navigation -->
+        <nav class="pageNavigation  slds-m-bottom_large">
+    <div>
+        <div class="slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_6-of-6">
+                <ul>
+                    <li class="complete">
+                        <a href="#"><i class="material-icons nav-icons ">directions_car </i>  The car</a></li>
+                    <li class="current"><a href="#"><i class="material-icons nav-icons ">
+					person</i> Personal Details</a></li>
+                    <li><a href="#"><i class="material-icons nav-icons"> home</i> Living situation</a></li>
+                    <li><a href="#"><i class="material-icons nav-icons">assignment_turned_in </i> Employment </a></li>
+                    <li><a href="#"><i class="material-icons nav-icons">attach_money </i> Finances </a></li>
+                    <li><a href="#"><i class="material-icons nav-icons">dvr </i> Review </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+        <!-- Page Navigation -->
+    </div>
+    <div class="headerSpace"></div>
+    <!-- midcontent start here-->
+    <div class="container">
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+
+                <div class="">
+                    <button class="slds-button slds-button_neutral btnSecondary backButton">
+                                        <i class="material-icons">
+                                           arrow_back
+                                            </i>
+                                    </button>
+                </div>
+
+                <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-small">Add your partner’s details
+                </h1>
+                <div class="subheadingSmall slds-m-bottom_x-large ">We'll use this to improve your serviceability.</div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters columnWrapper">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_12-of-12">
+                                <div class="slds-grid slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                        <div class="formElem">
+                                            <div class="outlineNone">
+                                                <label class="field_label">First Name</label>
+                                                <div class="input_fields ">
+                                                    <input type="text" value="Amanda">
+                                                    <em class="errMsg">Amanda</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                        <div class="formElem">
+                                            <div class="outlineNone">
+                                                <label class="field_label">Last Name</label>
+                                                <div class="input_fields ">
+                                                    <input type="text" value="Hugs">
+                                                    <em class="errMsg">Dead</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-1">
+                                <div class="formElem">
+                                    <label class="field_label">Email address</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="amanda.huggs@hotmail.com">
+                                        <em class="errMsg">This is an Error!</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+                                <div class="slds-grid slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                        <div class="formElem ">
+                                            <div class="outline">
+                                                <label class="field_label">Date of birth</label>
+                                                <div class="input_fields ">
+                                                    <input type="text" value="22 August 1980">
+                                                    <em class="errMsg">This is an Error!</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_6-of-12">
+                                        <div class="formElem">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Gender</label>
+                                                <span class="selection">Female</span>
+                                                <div class="optionsList">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle" />
+                                                                <span>FeMale</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="used car" name="vehicle" />
+                                                                <span>Female</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_12-of-12">
+                                <p>Is their residential address different from yours?</p>
+                                <div class="slds-m-top_large slds-m-bottom_xx-large slds-clearfix">
+                                    <button class="slds-button slds-button_brand btnSecondary btnheadSnd">
+                                        Yes
+                                    </button>
+                                    <button class="slds-button slds-button_brand btnhead btnheadSnd">
+                                        No
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep sectionSep"></div>
+                        <div class="heading4 slds-m-top_medium">
+                            <h3>How would you describe your partner’s current employment situation?</h3>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_large">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_11-of-12">
+                                <div class="formElem selectField">
+                                    <div class="cs_selectbox" tabindex="-1">
+                                        <label class="field_label">Employment type</label>
+                                        <span class="selection no_padding">select</span>
+                                        <div class="optionsList">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="radio" value="yes" name="car_i_want">
+                                                        <span> Full Time</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <div class="formElem">
+                                    <label class="field_label">Occupation</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="Branch Teller">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep sectionSep"></div>
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_large  slds-m-bottom_large">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <label class="field_label fnt20">Where do you currently work?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12">
+                                <div class="formElem">
+                                    <label class="field_label">Company name</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value="ANZ Branch Port Melbourne" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                                <div class="formElem">
+                                    <label class="field_label">ABN</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value=" 474747474" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters posRel">
+                            <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                <div class="formElem">
+                                    <label class="field_label">Company adddress</label>
+                                    <div class="input_fields ">
+                                        <input type="text" value=" 1/154-158 Bay St, Port Melbourne VIC 3207" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep sectionSep"></div>
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_large  slds-m-bottom_large">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <label class="field_label fnt20">How long have you been employed here?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_11-of-12">
+                                <div class="slds-grid slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem selectField">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Years</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="5 years" name="duration">
+                                                                <span>8</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="4 years" name="duration">
+                                                                <span>9</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="3 years" name="duration">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="2 years" name="duration">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="1 year" name="duration">
+                                                                <span>12</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_3-of-6 slds-large-size_4-of-12">
+                                        <div class="formElem">
+                                            <div class="cs_selectbox" tabindex="-1">
+                                                <label class="field_label">Months</label>
+                                                <span class="selection">select</span>
+                                                <div class="optionsList">
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="new car" name="vehicle">
+                                                                <span>10</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="radio" value="used car" name="vehicle">
+                                                                <span>11</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep sectionSep"></div>
+                        <div class="gridColCont slds-m-top_x-large">
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6">
+                                    <h3>Income</h3>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary arwButton">
+                                        <i class="material-icons">
+                                            expand_more
+                                            </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6 lbl">
+                                    Primary Income
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right lbl">
+                                    $5,000
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6 lbl">
+                                    Other
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right lbl">
+                                    $3,000
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-bottom_large">
+                                <div class="slds-col slds-size_3-of-6">
+                                    Total Income
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-text-align_right lbl">
+                                    <span class="total"> $8,000 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectionSep sectionSep"></div>
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_large">
+                            <div class="slds-col">
+                                <div class="midHeading">
+                                    <h2>Liabilities</h2>
+                                    <p>We’ve made it easy for you to find everything you need here.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_1-of-1">
+                                <label class="cstm_input">
+                                    <input type="checkbox" name="repayment">
+                                    <em></em> Own home property
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Investment property loan
+                                    </label>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="slds-m-top_large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Motor vehicle loan
+                                    </label>
+                                </div>
+                             
+                            </div>
+                        </div>
+
+
+                         <div class="slds-m-top-large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Recreation asset loan
+                                    </label>
+                                </div>
+                             
+                            </div>
+                        </div>
+
+
+
+                         <div class="slds-m-top-large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Personal Loan
+                                    </label>
+                                </div>
+                             
+                            </div>
+                        </div>
+
+
+                        <div class="slds-m-top-large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_4-of-6">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Credit card
+                                    </label>
+                                </div>
+                                <div class="slds-col slds-size_2-of-6 slds-text-align_right">
+                                    <button class="slds-button slds-button_neutral btnSecondary plusButton">
+                                        <i class="material-icons">
+                                        add_circle_outline
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                         <div class="slds-m-top_large">
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_12-of-12">
+                                    <div class="formElem ">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Financier
+                                            </label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="Westpc Australia">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_7-of-12">
+                                    <div class="formElem ">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Limit
+                                            </label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$2,784.27">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12">
+                                    <div class="formElem ">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Outstanding balance
+                                            </label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$2,784.27">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-grid slds-wrap slds-gutters mrgnLsp">
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_7-of-12">
+                                    <div class="formElem ">
+                                        <div class="outlineNone">
+                                            <label class="field_label">Repayments</label>
+                                            <div class="input_fields ">
+                                                <input type="text" value="$2,784.27">
+                                                <em class="errMsg"></em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_3-of-6 slds-large-size_5-of-12">
+                                    <div class="formElem">
+                                        <div class="cs_selectbox" tabindex="-1">
+                                            <label class="field_label">Frequency</label>
+                                            <span class="selection">Weekly</span>
+                                            <div class="optionsList">
+                                                <ul>
+                                                    <li>
+                                                        <label>
+                                                            <input type="radio" value="new car" name="vehicle">
+                                                            <span>Weekly/span>
+                                                        </label>
+                                                    </li>
+
+                                                     <li>
+                                                        <label>
+                                                            <input type="radio" value="new car" name="vehicle">
+                                                            <span>$5,000</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                          <div class="slds-m-top-large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Overdraft
+                                    </label>
+                                </div>
+                             
+                            </div>
+                        </div>
+
+                        <div class="slds-m-top-large checkCont">
+                            <div class="slds-m-top_large slds-grid slds-wrap slds-gutters">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <label class="cstm_input">
+                                        <input type="checkbox" name="repayment">
+                                        <em></em> Debt agreement / tax debt
+                                    </label>
+                                </div>
+                             
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+                <div class="messageWrapper">
+                    <h2 class="msgHeading slds-m-bottom_medium">Help Tips?</h2>
+                    <p>
+                        Make sure your details match your driver's licence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- midcontent start here-->
+    <!-- Page Footer -->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
