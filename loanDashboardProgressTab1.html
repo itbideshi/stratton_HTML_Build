@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    @@include('./templates/Header/header.html', { "exit": 0, "stage": 0 , "headnav":1})
+    <!-- Page Header -->
+    <div class="innerHeader loanDocument ">
+        <div class="container paddT0">
+            <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+                <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                    2016 Ford Mustang GT Premium
+                    <div class="tabsCont">
+                        <ul>
+                            <li><a href="#">Your Loan </a> </li>
+                            <li class="activeBg"><a href="#">Your Documents </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="errorInfo">Oh snap! Change a few things up and try submitting again.</div>
+    <div class="container loanDashboard">
+    
+         <div class="slds-grid slds-wrap slds-grid_align-center slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <div class="lhs_wrapper">
+                    <form action="">
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-size_6-of-6 slds-large-size_6-of-6">
+                                <div class="formElem">
+                                        <label class="field_label fnt20 slds-m-bottom_large">What's your current home addess?</label>
+                                                                          </div>
+                            </div>
+                        </div>                 
+
+
+                        
+                        <div class="slds-grid slds-wrap slds-gutters">
+                            <div class="slds-col slds-large-size_6-of-6 slds-m-top_large submitBtn">
+                                <div class="formElem slds-clearfix stepsAction">
+                                    <button class="slds-button slds-button_brand btnBack slds-float_left">
+                                        Back
+                                    </button>
+                                    <button class="slds-button slds-button_brand btnSave slds-float_right">
+                                        Save and continue
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-show_large">
+                
+            </div>
+        </div>
+
+    </div>   
+
+        <!-- Page Footer -->
+        <!--<% include('templates/footer') %>-->
+        <!-- Page Footer -->
+        <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
