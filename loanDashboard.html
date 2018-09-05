@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stratton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.min.css" />
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header>
+    <div class="slds-grid slds-wrap slds-grid_align-center">
+        <div class="slds-col slds-size_11-of-12">
+            <nav class="secondary_nav slds-clearfix slds-hide_large">
+             
+            <div>
+                <div class="slds-text-align_right slds-hide_large slds-p-top_medium slds-p-bottom_medium">
+                        
+                        <span class="slds-float_left menu menuTxt">Menu</span>
+
+                        <span class="crossMenu"><a href="#" onclick="stratton.sidebar_toggle()"><img src="images/icons/close.svg" width="15" /></a> </span>
+                        <div class="slds-clearfix"></div>
+                    </div>
+             </div>       
+
+
+                <ul>
+                     <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Your Profile</a></li>
+                            
+                    <hr/>
+                    <li><a href="#">Start New Application</a></li>
+                    <hr/>
+                    <li><a href="#">Contact us</a></li>
+                    <hr/>
+                    <li><a href="#">Log out</a></li>
+                    <hr/>
+                </ul>
+            </nav>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_3-of-12">
+                    <a href="#">
+						<img src="images/stratton-finance-logo.png" alt="" class="logo" />
+					</a>
+                </div>
+
+            
+
+
+
+             
+
+                <div class="slds-col slds-size_5-of-12 slds-show_large">
+                    
+
+                      
+                </div>
+
+                
+                <div class="slds-col slds-size_9-of-12 slds-large-size_4-of-12  slds-text-align_right call">
+                    
+                    <a href="#" class="slds-hide_large" onclick="stratton.sidebar_toggle()">
+						<img src="images/icons/hamburger.png" />
+					</a>
+                    
+                    <span class="slds-hide">
+						<a href="tel:1300787288">1300 787 288</a>
+						<img src="images/icons/search.svg" alt="" class="search_icon" />
+					</span>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- Page Header -->
+
+    <div class="container loanDashboard">
+        
+        <div class="slds-grid slds-wrap slds-grid_align-center">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                <h1 class="heading3  slds-m-top_x-small slds-m-bottom_x-small">Dashboard
+                </h1>
+                <div class="subheadingSmall slds-m-bottom_x-large field_label slds-m-top_large ">YOUR APPLICATION</div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+            </div>
+        </div>
+
+        <div class="slds-grid slds-wrap slds-grid_align-center slds-clearfix">
+            <div class="slds-col slds-size_1-of-1 slds-large-size_10-of-12 ">
+                
+                
+                <div class="lhs_wrapper slds-m-bottom_large inProgress">
+                    
+                    
+
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_3-of-6">
+                            <h3 class="heading3">2016 Ford Mustang</h3>
+                        </div>
+                        <div class="slds-col slds-size_3-of-6 slds-text-align_right ">
+                             <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+
+
+                     <div class="slds-m-top_medium">
+                        
+                        <div class="slds-clearfix">
+                            <div class="slds-float_left">
+                                <p class="field_label heading6">Stage 3</p>
+                                <p class="graphLbl">Get Approved</p>
+                                <p class="heading6 fntBold"><strong>Get Approved</strong></p>
+                            </div>
+                            <div class="slds-float_right slds-hide_large">
+                                <button class="slds-button nextButton">
+                                    <i class="material-icons">
+                                        chevron_right
+                                    </i>
+                                </button>
+                            </div>
+
+                                                 </div>
+
+                        <!-- salesforce progressbar -->
+                        <div class="slds-progress-bar slds-m-top_medium slds-size_1-of-2" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25" role="progressbar">
+                          <span class="slds-progress-bar__value" style="width: 25%;">
+                          </span>
+                        </div>
+                        <!-- salesforce progressbar -->
+
+                           <div class="slds-m-top_large"><button class="slds-button slds-button_brand primaryBtn verify resume">Resume</button></div>
+
+
+                    </div>
+
+                    <hr class="slds-show_large"/>
+
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12 amount slds-m-bottom_large">
+                            <label class="colLabel">Amount</label>
+                            <h4 class="colHeading">$60,000</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12 rates slds-m-bottom_large">
+                            <label class="colLabel">Interest rate</label>
+                            <h4 class="colHeading">6.47%</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_3-of-12 rates">
+                            <label class="colLabel">Weekly  repayments</label>
+                            <h4 class="colHeading">6.47%</h4>
+                        </div>
+
+                         <div class="slds-col slds-size_1-of-2 slds-large-size_5-of-12 rates slds-text-align_right">
+
+                           <img src="images/macquire.png" />
+                        </div>
+                    </div>
+                    
+                    <hr class="slds-hide_large"/>
+
+                   
+
+                </div>
+
+                <div class="lhs_wrapper">
+                    
+                    
+
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_3-of-6">
+                            <h3 class="heading3">2017 Audi A8</h3>
+                            <p class="slds-m-top_xx-small field_label slds-m-top_large">Your application cannot be processed online. </p>
+
+                             <p class="slds-m-top_xx-small field_label">One of our dedicated consultants will contact you to proceed over the phone</p>
+                        </div>
+                        <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                           
+                        </div>
+                    </div>
+
+                    <hr class="slds-show_large" />
+
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12">
+                            <label class="colLabel">Amount</label>
+                            <h4 class="colHeading">$60,000</h4>
+                        </div>
+                    </div>
+                    <hr class="slds-hide_large" />
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-large-size_4-of-12 slds-hide_large">
+                            <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+                            <div class="subheadingSmall slds-m-bottom_x-large field_label">YOUR LOAN</div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12">
+                        </div>
+                    </div> 
+
+
+                   <div class="lhs_wrapper slds-m-bottom_large inProgress">
+                    
+                   
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_3-of-6">
+                            <h3 class="heading3">2016 Ford Mustang</h3>
+                        </div>
+                        <div class="slds-col slds-size_3-of-6 slds-text-align_right">
+                             <button class="slds-button slds-button_brand btnSecondary">Details</button>
+                        </div>
+                    </div>
+
+
+                    <hr class="slds-show_large"/>
+
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_medium slds-m-bottom_small">
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12 amount slds-m-bottom_large">
+                            <label class="colLabel">Amount</label>
+                            <h4 class="colHeading">$60,000</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_2-of-12 rates slds-m-bottom_large">
+                            <label class="colLabel">Interest rate</label>
+                            <h4 class="colHeading">6.47%</h4>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-large-size_3-of-12 rates">
+                            <label class="colLabel">Weekly  repayments</label>
+                            <h4 class="colHeading">6.47%</h4>
+                        </div>
+
+                         <div class="slds-col slds-size_1-of-2 slds-large-size_5-of-12 rates slds-text-align_right">
+
+                           <img src="images/pepper.png" />
+                        </div>
+                    </div>
+                    
+                    <hr class="slds-hide_large"/>
+
+                   
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        
+
+
+
+    </div>
+    <!-- Page Footer -->
+    <!--<% include('templates/footer') %>-->
+    <!-- Page Footer -->
+    <script src="./javascripts/stratton_scripts.js"></script>
+</body>
+
+</html>
